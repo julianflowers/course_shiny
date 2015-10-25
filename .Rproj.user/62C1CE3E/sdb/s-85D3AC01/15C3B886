@@ -1,0 +1,17 @@
+{
+    "contents" : "\n# This is the user-interface definition of a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\nlibrary(shiny)\n\nshinyUI(fluidPage(\n\n  # Application title\n  titlePanel(\"Distributions of health metrics for English LAs\"),\n    helpText(\"Use slider to control input\"),\n    helpText(\"Data source: http://www.healthprofiles.info\"),\n  # Sidebar with a slider input for number of bins\n  sidebarLayout(\n    sidebarPanel(\n    \n      sliderInput(\"life.expectancy\",\n                  \"Life Expectancy:\",\n                  min = 80,\n                  max = 88,\n                  value = 84)\n    ),\n\n    # Show a plot of the generated distribution\n    mainPanel(\n     h3(\"Histogram of life expectancy\"),\n      plotOutput(\"model1\")\n     \n    )\n  )\n))\n",
+    "created" : 1445788472146.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1029302117",
+    "id" : "15C3B886",
+    "lastKnownWriteTime" : 1445790133,
+    "path" : "~/Documents/R_projects/course_shiny/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

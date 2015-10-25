@@ -1,0 +1,17 @@
+{
+    "contents" : "\nhp3 <-read.csv(\"hp3.csv\")\nlibrary(shiny)\n\nshinyServer(function(input, output) {\n\n  output$model1 <- renderPlot({\n\n    # generate bins based on input$bins from ui.R\n    \n\n    # draw the histogram with the specified number of bins\n    hist(hp3$life.expectancy, col =\"grey\")\n    abline(v = input$life.expectancy, col = 'blue', lwd = 2)\n  })\n  \n\n})\n",
+    "created" : 1445788472380.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "324769694",
+    "id" : "85D33AAA",
+    "lastKnownWriteTime" : 1445789738,
+    "path" : "~/Documents/R_projects/course_shiny/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

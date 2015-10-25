@@ -1,0 +1,8 @@
+name: course_shiny
+account: jflowers
+server: shinyapps.io
+bundleId: 297365
+url: https://jflowers.shinyapps.io/course_shiny
+when: 1445790183.67272
+asMultiple: FALSE
+asStatic: FALSE
